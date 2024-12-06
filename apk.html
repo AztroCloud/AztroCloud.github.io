@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instalar AztroPlay - Aztro Cloud</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #121212;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .container {
+      background-color: #1c1c1e;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      padding: 25px;
+    }
+    .title {
+      font-size: 36px;
+      font-weight: bold;
+      color: #0a84ff;
+      margin-bottom: 20px;
+    }
+    .description {
+      font-size: 18px;
+      color: #ddd;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .info {
+      font-size: 14px;
+      color: #aaa;
+      margin-bottom: 30px;
+      line-height: 1.4;
+    }
+    .install-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .install-button {
+      background-color: #0a84ff;
+      color: white;
+      padding: 18px 30px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      transition: transform 0.2s, background-color 0.3s;
+      box-shadow: 0 5px 15px rgba(0, 132, 255, 0.3);
+      width: 100%;
+    }
+    .install-button:hover {
+      background-color: #0061c1;
+      transform: scale(1.05);
+    }
+    .install-button:active {
+      background-color: #0050a1;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #aaa;
+    }
+    .footer a {
+      color: #0a84ff;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">¡Instala AztroPlay!</h1>
+    <p class="description">La nueva versión de AztroPlay está lista para llevarte a un mundo de películas increíbles. Descubre todas las mejoras y disfruta del mejor contenido.</p>
+    
+    <div class="info">
+      <strong>Nueva Versión:</strong> 2.0.1<br>
+      <strong>Plataforma:</strong> Android<br>
+      <strong>Mejoras:</strong><br>
+      - Optimización de la interfaz de usuario.<br>
+      - Mejora de la velocidad de carga.<br>
+      - Nuevas funcionalidades para ver películas.<br>
+      - Corrección de errores importantes.<br>
+    </div>
+
+    <div class="install-buttons">
+      <button class="install-button" onclick="joinTelegramGroup()">Unirse al Grupo de Telegram</button>
+      <button class="install-button" onclick="installApp()">Instalar AztroPlay</button>
+    </div>
+    
+    <div class="footer">
+      <p>¿Tienes dudas? <a href="#">Contáctanos</a></p>
+      <p>&copy; 2024 Aztro Cloud | Todos los derechos reservados</p>
+    </div>
+  </div>
+
+  <script>
+    const telegramUrl = 'https://t.me/tu_grupo'; // Reemplaza con el enlace real a tu grupo de Telegram
+
+    function installApp() {
+      alert("La instalación comenzará en breve. Si no ves una opción, intenta abriendo el enlace directamente.");
+      window.location.href = 'https://play.google.com/store/apps/details?id=com.tu.app'; // Redirige a la tienda de aplicaciones (opcional)
+    }
+
+    function joinTelegramGroup() {
+      window.open(telegramUrl, '_blank'); // Abre el grupo de Telegram en una nueva pestaña
+    }
+  </script>
+</body>
+  </html>
+  
